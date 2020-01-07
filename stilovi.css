@@ -1,0 +1,51 @@
+*{
+    padding:  10px 10px 10px 10px;
+}
+
+#flexcontainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: stretch;
+
+}
+#prvi{
+    margin-left: auto ;
+}
+#drugi{
+    margin: auto;
+}
+
+#treci{
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+#cetvrti {
+    grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+#peti{
+    grid-column: 2 ;
+  grid-row: 1 / span 3;
+}
+#sesti{
+    grid-column: 3;
+  grid-row: 1 / span 4;  
+}
+
